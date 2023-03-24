@@ -1,11 +1,15 @@
 #carouselExampleIndicators {
     background-color: #000;
-    max-width: 50rem;
+    width: 100%;
+    height: 30rem;
     margin: auto;
 }
 
 #carouselExampleIndicators img {
     width: 100% !important;
+    height: 30rem !important;
+    object-fit: cover;
+    object-position: center;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators button {
