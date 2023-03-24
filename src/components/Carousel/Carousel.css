@@ -1,0 +1,17 @@
+#carouselExampleIndicators {
+    background-color: #000;
+    max-width: 50rem;
+    margin: auto;
+}
+
+#carouselExampleIndicators img {
+    width: 100% !important;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators button {
+    background-color: #000a !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border-radius: .2rem;
+    padding: 1rem !important; 
+}
