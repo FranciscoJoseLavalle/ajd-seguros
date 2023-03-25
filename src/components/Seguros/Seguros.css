@@ -6,22 +6,48 @@
     max-width: 100%;
 }
 
+#seguros h2 {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
 #seguros>div {
+    width: 100%;
+    height: 100%;
+    background-color: #fff8;
+}
+
+#seguros>div>div {
     width: 90%;
     max-width: 60rem;
     margin: auto;
+    padding: 2rem 0;
 }
 
 .seguros {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    height: min-content;
 }
 
 .seguro {
-    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    background-color: #5275e7cc;
+    backdrop-filter: blur(.2rem);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    padding: 2rem;
+    height: min-content;
+    color: #fff;
+    text-align: center;
 }
 
 .seguro img {
-    width: 100%;
+    width: 50%;
 }
