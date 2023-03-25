@@ -1,21 +1,84 @@
 #carouselExampleIndicators {
     background-color: #000;
     width: 100%;
-    height: 30rem;
+    height: 50vh;
+    max-height: 30rem;
     margin: auto;
 }
 
 #carouselExampleIndicators img {
     width: 100% !important;
-    height: 30rem !important;
+    height: 50vh !important;
     object-fit: cover;
     object-position: center;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-indicators button {
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators button {
     background-color: #000a !important;
 }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     border-radius: .2rem;
-    padding: 1rem !important; 
+    padding: 1rem !important;
+}
+
+.carousel-item {
+    color: #fff;
+}
+
+.carousel-item div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    padding: 2rem 15%;
+    background-color: #0006;
+    gap: .75rem;
+}
+.carousel-item div * {
+    margin: 0;
+}
+
+.carousel-item h3 {
+    font-size: 2rem;
+    text-shadow: #000 -1px 1px 4px;
+    animation-name: carousel;
+    animation-duration: 1s;
+}
+
+.carousel-item p {
+    text-shadow: #000 -1px 1px 4px;
+    animation-name: carousel;
+    animation-duration: 1s;
+}
+
+.carousel-item button {
+    animation-name: carousel;
+    animation-duration: 1s;
+    border: none;
+    padding: .3rem;
+    background-color: #5275e7;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@keyframes carousel {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

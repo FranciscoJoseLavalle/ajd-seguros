@@ -11,12 +11,27 @@ const Carousel = () => {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src="./img/auto.webp" className="d-block w-50" alt="..." />
+                    <div>
+                        <h3>¡Manejá tranquilo!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
+                        <button>Contactanos</button>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src="./img/confianza.webp" className="d-block w-50" alt="..." />
+                    <div>
+                        <h3>Confianza</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
+                        <button>Contactanos</button>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src="./img/trabajo.webp" className="d-block w-50" alt="..." />
+                    <div>
+                        <h3>ART Riesgos del Trabajo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
+                        <button>Contactanos</button>
+                    </div>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -27,7 +42,7 @@ const Carousel = () => {
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>
-        </div>
+        </div >
     )
 }
 

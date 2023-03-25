@@ -1,8 +1,8 @@
 const Links = [
-    { label: "Inicio", route: '#' },
-    { label: "Sobre Nosotros", route: '#' },
+    { label: "Inicio", route: '#header' },
+    { label: "Sobre Nosotros", route: '#nosotros' },
+    { label: "Compañías", route: '#compañias' },
     { label: "Contacto", route: '#' },
-    { label: "Relleno", route: '#' },
 ]
 
 export default Links

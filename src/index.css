@@ -3,4 +3,38 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 90%;
+    max-width: 60rem;
+    margin: 5rem auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+b {
+    color: #5275e7;
+}
+
+::-webkit-scrollbar {
+    width: .75rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #adbae4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5275e7;
 }
