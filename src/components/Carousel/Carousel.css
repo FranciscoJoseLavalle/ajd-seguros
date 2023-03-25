@@ -43,12 +43,13 @@
     background-color: #0006;
     gap: .75rem;
 }
+
 .carousel-item div * {
     margin: 0;
 }
 
 .carousel-item h3 {
-    font-size: 2rem;
+    font-size: 3rem;
     text-shadow: #000 -1px 1px 4px;
     animation-name: carousel;
     animation-duration: 1s;
@@ -60,17 +61,6 @@
     animation-duration: 1s;
 }
 
-.carousel-item button {
-    animation-name: carousel;
-    animation-duration: 1s;
-    border: none;
-    padding: .3rem;
-    background-color: #5275e7;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
 @keyframes carousel {
     0% {
         opacity: 0;
@@ -80,5 +70,16 @@
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item h3 {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 1024px) {
+    .carousel-item h3 {
+        font-size: 4rem;
     }
 }

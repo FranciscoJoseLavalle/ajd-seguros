@@ -3,7 +3,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header id="header">
+        <header id="inicio">
             <nav className='header__nav'>
                 <a href="#header" className='header__nav-h1'>
                     <img src="./img/logo.jpg" alt="Logo" width={125} height={125} />

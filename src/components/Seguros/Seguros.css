@@ -1,0 +1,27 @@
+#seguros {
+    background-image: url(./img/segurosback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 100%;
+}
+
+#seguros>div {
+    width: 90%;
+    max-width: 60rem;
+    margin: auto;
+}
+
+.seguros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.seguro {
+    width: 3rem;
+}
+
+.seguro img {
+    width: 100%;
+}

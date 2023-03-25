@@ -1,4 +1,5 @@
 import './Carousel.css';
+import BtnContactanos from '../BtnContactanos/BtnContactanos';
 
 const Carousel = () => {
     return (
@@ -14,7 +15,7 @@ const Carousel = () => {
                     <div>
                         <h3>¡Manejá tranquilo!</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
-                        <button>Contactanos</button>
+                        <BtnContactanos />
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -22,7 +23,7 @@ const Carousel = () => {
                     <div>
                         <h3>Confianza</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
-                        <button>Contactanos</button>
+                        <BtnContactanos />
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -30,7 +31,7 @@ const Carousel = () => {
                     <div>
                         <h3>ART Riesgos del Trabajo</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
-                        <button>Contactanos</button>
+                        <BtnContactanos />
                     </div>
                 </div>
             </div>

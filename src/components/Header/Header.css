@@ -1,4 +1,4 @@
-#header {
+#inicio {
     padding: 0 1rem;
 }
 
@@ -67,7 +67,7 @@
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .header__nav-ul {
         display: none;
     }
@@ -83,7 +83,7 @@
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 901px) {
     .header__nav-ul-mobile {
         display: none;
     }
