@@ -22,6 +22,7 @@ const Seguros = () => {
 
     return (
         <section id='seguros'>
+            <img src="./img/segurosback.jpg" alt="Fondo" />
             <div>
                 <div>
                     <h2 data-aos="fade-up">¿Qué <span style={{
