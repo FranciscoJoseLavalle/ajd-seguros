@@ -7,7 +7,12 @@
     text-transform: uppercase;
     font-weight: 600;
     border: none;
-    padding: .3rem;
+    padding: .5rem;
     background-color: #5275e7;
     color: #fff;
+    transition: .2s;
+}
+
+.btnContacto button:hover {
+    background-color: #7791e9;
 }

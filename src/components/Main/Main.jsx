@@ -3,6 +3,7 @@ import Carousel from '../Carousel/Carousel'
 import Compañias from '../Compañias/Compañias'
 import Nosotros from '../Nosotros/Nosotros'
 import Seguros from '../Seguros/Seguros'
+import Contacto from '../Contacto/Contacto'
 import Whatsapp from '../Whatsapp/Whatsapp'
 
 const Main = () => {
@@ -12,6 +13,7 @@ const Main = () => {
             <Nosotros />
             <Seguros />
             <Compañias />
+            <Contacto />
             <Whatsapp />
         </main>
     )

@@ -1,0 +1,86 @@
+/* FOTO */
+.fotoArrowCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
+    /* position: absolute; */
+    /* bottom: 0;
+    right: 0;
+    left: 0; */
+}
+
+@media (min-width: 768px) {
+    .fotoArrowCont {
+        position: initial;
+    }
+}
+
+@media (max-width: 750px) {
+    .fotoArrowCont {
+        margin: auto;
+    }
+}
+
+.fotoCont {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    height: 20vw;
+    min-height: 10rem;
+    max-height: 15rem;
+    align-items: center;
+}
+
+.fotoCont-container {
+    position: relative;
+    height: 20%;
+    min-width: 10rem;
+    max-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botonCont {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .6s;
+    animation: boton 1.5s linear infinite;
+}
+
+.botonCont button {
+    padding: .5rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: violet solid .15rem;
+    color: violet;
+    border-radius: .3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.fotoMia {
+    position: absolute;
+    width: 20vw;
+    min-width: 10rem;
+    max-width: 15rem;
+    margin: auto;
+    border-radius: 50%;
+    border: solid .14rem violet;
+    animation: fotoMia 3s linear infinite;
+    transform: perspective(600px) rotateY(0deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.fotoCont:hover .fotoMia {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.fotoCont:hover .botonCont {
+    transform: perspective(600px) rotateY(360deg);
+}
