@@ -33,7 +33,7 @@ const Seguros = () => {
             <div className='seguros'>
                 <div>
                     <h2 data-aos="fade-right">¿Qué <span style={{
-                        color: "#5275e7"
+                        color: "#5275e7",
                     }}>ofrecemos?</span></h2>
                     <div className='seguros'>
                         {seguros.map((seguro, i) => (

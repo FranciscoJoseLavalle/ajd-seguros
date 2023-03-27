@@ -18,13 +18,15 @@
 #seguros h2 {
     /* text-align: left; */
     margin-bottom: 2rem;
+    color: #fff;
+    text-shadow: #000 -1px 1px 4px;
 }
 
 #seguros>div {
     width: 100%;
     min-height: 80vh;
     /* height: 100%; */
-    background-color: #fff8;
+    background-color: #0006;
     position: absolute;
     top: 0;
     left: 0;
