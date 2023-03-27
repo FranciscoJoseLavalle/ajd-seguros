@@ -12,7 +12,7 @@ const Contacto = () => {
 
     return (
         <section id='contacto'>
-            <h2 data-aos="fade-up">Contacto</h2>
+            <h2 data-aos="fade-right">Contacto</h2>
             <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ullam ab facilis!</p>
             <div>
                 <div className='redes' data-aos="fade-up">

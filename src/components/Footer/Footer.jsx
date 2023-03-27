@@ -11,7 +11,7 @@ const Footer = () => {
             <nav className='footer__nav'>
                 <a href="#inicio" className='footer__nav-h1'>
                     <img src="./img/logo.jpg" alt="Logo" width={125} height={125} />
-                    <h1>AJD<span>Seguros</span></h1>
+                    {/* <h1>AJD<span>Seguros</span></h1> */}
                 </a>
                 <ul className='footer__nav-ul'>
                     {Links.map(link => (

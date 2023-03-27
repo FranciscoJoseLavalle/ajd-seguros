@@ -1,7 +1,7 @@
 import './Seguros.css';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const seguros = [
     { label: "Automotores", thumbnail: "./img/seguros/car.png" },
@@ -15,17 +15,24 @@ const seguros = [
 ]
 
 const Seguros = () => {
+    const [height, setHeight] = useState(0)
 
     useEffect(() => {
         AOS.init();
+        setHeight(document.querySelector('.seguros').clientHeight)
     }, [])
+    window.onresize = () => {
+        setHeight(document.querySelector('.seguros').clientHeight)
+    }
 
     return (
-        <section id='seguros'>
-            <img src="./img/segurosback.jpg" alt="Fondo" />
-            <div>
+        <section id='seguros' style={{
+            height
+        }}>
+            <img src="./img/segurosback.jpg" alt="Fondo" className='img' height={height} />
+            <div className='seguros'>
                 <div>
-                    <h2 data-aos="fade-up">¿Qué <span style={{
+                    <h2 data-aos="fade-right">¿Qué <span style={{
                         color: "#5275e7"
                     }}>ofrecemos?</span></h2>
                     <div className='seguros'>

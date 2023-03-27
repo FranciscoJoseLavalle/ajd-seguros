@@ -4,6 +4,11 @@
     gap: 1rem;
     justify-content: center;
 }
+
 #compañias img {
     object-fit: contain;
+}
+
+#compañias img:hover {
+    transform: scale(1.2) !important;
 }

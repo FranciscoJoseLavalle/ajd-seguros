@@ -11,7 +11,7 @@ const Nosotros = () => {
 
     return (
         <section id='nosotros'>
-            <h2 data-aos="fade-left">Sobre <span style={{
+            <h2 data-aos="fade-right">Sobre <span style={{
                 color: "#5275e7"
             }}>Nosotros</span></h2>
             <div data-aos="fade-up"
