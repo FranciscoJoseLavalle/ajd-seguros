@@ -14,22 +14,17 @@ const seguros = [
     { label: "Comercio Industria", thumbnail: "./img/seguros/factory.png" },
 ]
 
-const Seguros = () => {
-    const [height, setHeight] = useState(0)
+const Seguros = ({ segurosHeight }) => {
 
     useEffect(() => {
         AOS.init();
-        setHeight(document.querySelector('.seguros').clientHeight)
     }, [])
-    window.onresize = () => {
-        setHeight(document.querySelector('.seguros').clientHeight)
-    }
 
     return (
         <section id='seguros' style={{
-            height
+            height: segurosHeight
         }}>
-            <img src="./img/segurosback.jpg" alt="Fondo" className='img' height={height} />
+            <img src="./img/segurosback.jpg" alt="Fondo" className='img' height={segurosHeight} />
             <div className='seguros'>
                 <div>
                     <h2 data-aos="fade-right">¿Qué <span style={{

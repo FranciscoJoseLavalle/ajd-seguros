@@ -1,9 +1,14 @@
 import Links from '../../utilities/Links';
-import './Header.css';
+import './HeaderFixed.css';
 
-const Header = () => {
+const HeaderFixed = ({ isVisible }) => {
     return (
-        <header id="inicio">
+        <header className='header' style={{
+            position: isVisible ? "initial" : "fixed",
+            top: 0,
+            left: 0,
+            width: "100%"
+        }}>
             <nav className='header__nav'>
                 <a href="#inicio" className='header__nav-h1'>
                     <img src="./img/logo.jpg" alt="Logo" width={125} height={125} />
@@ -27,16 +32,15 @@ const Header = () => {
                 <ul className='header__nav-ul-mobile'>
                     {Links.map(link => (
                         <>
-                            <li><a href={link.route}>{link.label}</a>
-                            </li>
+                            <li key={link.label}><a href={link.route}>{link.label}</a></li>
                             <hr />
                         </>
                     ))}
                 </ul>
             </div>
 
-        </header >
+        </header>
     )
 }
 
-export default Header
+export default HeaderFixed

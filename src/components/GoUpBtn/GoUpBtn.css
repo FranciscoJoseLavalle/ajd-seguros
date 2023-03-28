@@ -1,0 +1,41 @@
+.GoUp {
+    position: fixed;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    width: 5.25rem;
+    background-color: #5275e7;
+    border-radius: 50%;
+    padding: 1rem;
+    animation-name: goup;
+    animation-duration: .5s;
+}
+
+.GoUp img {
+    width: 100%;
+    rotate: 180deg;
+    filter: invert(1);
+    animation-name: goup2;
+    animation-duration: .5s;
+}
+
+@keyframes goup {
+    0% {
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes goup2 {
+    0% {
+        rotate: -180deg;
+    }
+
+    100% {
+        rotate: 180deg;
+    }
+}

@@ -2,8 +2,10 @@
     position: relative;
     width: 100%;
     max-width: 100%;
+    min-height: 900px;
     padding: 0;
 }
+
 #contacto h2 {
     margin: 0;
 }
@@ -11,7 +13,9 @@
 #contacto>img {
     width: 100%;
     height: 100%;
+    min-height: 900px;
     object-fit: cover;
+    object-position: center;
 }
 
 #contacto>div {
@@ -27,7 +31,8 @@
     flex-direction: column;
     gap: 1rem;
     width: 100%;
-    padding: 2rem 0;
+    padding: 125px 0;
+    height: 100%;
     justify-content: center;
     align-content: center;
     background-color: #0006;

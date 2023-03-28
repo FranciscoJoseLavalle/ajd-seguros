@@ -4,24 +4,17 @@ import 'aos/dist/aos.css';
 import { useEffect, useState } from 'react';
 
 
-const Contacto = () => {
-    const [height, setHeight] = useState(0)
+const Contacto = ({ contactoHeight }) => {
 
     useEffect(() => {
         AOS.init();
-        setHeight(document.querySelector('.form-container').clientHeight)
     }, [])
-    window.onresize = () => {
-        setHeight(document.querySelector('.form-container').clientHeight)
-    }
 
     return (
         <section id='contacto' style={{
-            height
+            height: contactoHeight
         }}>
-            <img src="./img/contacto/background.jpg" alt="Fondo" style={{
-                height
-            }} />
+            <img src="./img/contacto/background.jpg" alt="Fondo" height={contactoHeight} />
             <div>
                 <div className='form-container'>
                     <h2 data-aos="fade-right" style={{
@@ -51,7 +44,11 @@ const Contacto = () => {
                             </div>
                             <div data-aos="fade-up">
                                 <label>Mensaje</label>
-                                <textarea type="text" placeholder='Ingresa tu nombre' required />
+                                <textarea type="text" placeholder='Ingresa el mensaje...' required />
+                            </div>
+                            <div data-aos="fade-up">
+                                <label>Mensaje</label>
+                                <input type="file" placeholder='Ingresa el mensaje...' required />
                             </div>
                             <button data-aos="fade-up">Enviar</button>
                         </form>
