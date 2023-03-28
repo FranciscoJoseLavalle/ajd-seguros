@@ -4,6 +4,7 @@
     height: 80vh;
     /* max-height: 30rem; */
     margin: auto;
+    text-align: center;
 }
 
 #carouselExampleIndicators img {
@@ -53,7 +54,6 @@
 
 .carousel-item p {
     text-shadow: #000 -1px 1px 4px;
-    text-align: center;
     animation-name: carousel;
     animation-duration: 1s;
 }
