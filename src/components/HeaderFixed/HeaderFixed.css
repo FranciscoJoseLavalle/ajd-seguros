@@ -4,6 +4,7 @@
     z-index: 2;
     animation-name: header;
     animation-duration: .5s;
+    box-shadow: #333 0 0 10px;
 }
 
 .header__nav {

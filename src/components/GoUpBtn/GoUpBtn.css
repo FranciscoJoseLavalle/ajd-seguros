@@ -8,6 +8,7 @@
     padding: 1rem;
     animation-name: goup;
     animation-duration: .5s;
+    box-shadow: #333 0 0 10px 1px;
 }
 
 .GoUp img {

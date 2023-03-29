@@ -57,7 +57,7 @@ const Contacto = ({ contactoHeight }) => {
                                     <label htmlFor='archivo'>Suba un archivo</label>
                                     <input type="file" id='archivo' placeholder='Ingresa el mensaje...' required />
                                 </div>
-                                <button data-aos="fade-up">Enviar</button>
+                                <button>Enviar</button>
                             </form>
                         </div>
                     </div>
