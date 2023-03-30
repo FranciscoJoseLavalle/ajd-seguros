@@ -155,3 +155,13 @@ form button {
 form button:hover {
     background-color: #7791e9;
 }
+
+form .inputWrong {
+    border: red solid .1rem;
+}
+
+form .inputWrong:focus,
+form .inputWrong:focus {
+    outline: red solid .15rem;
+    box-shadow: red 0 0 12px;
+}
