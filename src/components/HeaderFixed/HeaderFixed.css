@@ -1,6 +1,6 @@
 .header {
     padding: 0 1rem;
-    background-color: #fff;
+    background-color: #222;
     z-index: 5;
     animation-name: header;
     animation-duration: .5s;
@@ -41,7 +41,7 @@
 
 .header__nav-ul a:hover {
     /* color: #5275e7; */
-    color: #000;
+    color: #fff;
     transition: .2s;
 }
 
@@ -58,13 +58,14 @@
 .header__nav-ul-mobile hr {
     width: 100%;
     margin: 0;
+    background-color: #fff;
 }
 
 .header__nav-ul a,
 .header__nav-ul-mobile a {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #555;
+    color: #ddd;
     font-weight: 600;
 }
 

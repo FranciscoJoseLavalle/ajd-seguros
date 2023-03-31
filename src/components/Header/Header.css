@@ -1,6 +1,6 @@
 #inicio {
     padding: 0 1rem;
-    background-color: #fff;
+    background-color: #222;
     z-index: 2;
     animation-name: header;
     animation-duration: .5s;
@@ -63,7 +63,8 @@
 .header__nav-ul-mobile a {
     text-decoration: none;
     font-size: 1.15rem;
-    color: #555;
+    /* color: #555; */
+    color: #ddd;
     font-weight: 600;
 }
 

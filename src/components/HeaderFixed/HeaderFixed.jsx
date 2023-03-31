@@ -11,10 +11,10 @@ const HeaderFixed = ({ isVisible }) => {
         }}>
             <nav className='header__nav'>
                 <a href="#inicio" className='header__nav-h1'>
-                    <img src="./img/logo.jpg" alt="Logo" width={125} height={125} />
+                    <img src="./img/logolight.png" alt="Logo" width={125} height={125} />
                     {/* <h1>AJD<span>Seguros</span></h1> */}
                 </a>
-                <nav className="navbar navbar-light">
+                <nav className="navbar navbar-dark">
                     <div className="container-fluid">
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContentFixed" aria-controls="navbarToggleExternalContentFixed" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

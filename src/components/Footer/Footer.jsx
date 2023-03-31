@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className='footer'>
             <div>
                 <div className='footer__info'>
-                    <img src="./img/ssn.png" alt="SSN Logo" width={125} height={125} />
+                    <img src="./img/ssn.png" alt="SSN Logo" width={50} height={50} />
                     <div>
                         <p>Amir Julián Dib</p>
                         <small>Productor Asesor de Seguros</small>
@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
                 <nav className='footer__nav'>
                     <a href="#inicio" className='footer__nav-h1'>
-                        <img src="./img/logo.jpg" alt="Logo" width={125} height={125} />
+                        <img src="./img/logo.jpg" alt="Logo" width={50} height={50} />
                         {/* <h1>AJD<span>Seguros</span></h1> */}
                     </a>
                     <ul className='footer__nav-ul'>

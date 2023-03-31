@@ -7,12 +7,14 @@ import { useEffect } from 'react';
 const seguros = [
     { label: "Automotores", thumbnail: "./img/seguros/car.png" },
     { label: "Motocicletas", thumbnail: "./img/seguros/motorbike.png" },
-    { label: "Bicicleta/Monopatín", thumbnail: "./img/seguros/bicycle.png" },
+    { label: "Bicicleta Monopatín", thumbnail: "./img/seguros/bicycle.png" },
     { label: "Combinado Familiar", thumbnail: "./img/seguros/family.png" },
     { label: "Caución", thumbnail: "./img/seguros/handshake.png" },
+    { label: "Accidenes Personales", thumbnail: "./img/seguros/accidente.png" },
     { label: "ART", thumbnail: "./img/seguros/helmet.png" },
+    { label: "Vida", thumbnail: "./img/seguros/vida.png" },
     { label: "Retiro", thumbnail: "./img/seguros/money-bag.png" },
-    { label: "Comercio Industria", thumbnail: "./img/seguros/factory.png" },
+    { label: "Comercio Industrias", thumbnail: "./img/seguros/factory.png" },
 ]
 
 const Seguros = ({ segurosHeight }) => {
