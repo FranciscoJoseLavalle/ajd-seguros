@@ -8,6 +8,7 @@ const Contacto = ({ contactoHeight }) => {
     const [asunto, setAsunto] = useState('');
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
+    const [telefono, setTelefono] = useState('');
     const [mensaje, setMensaje] = useState('');
 
     useEffect(() => {
@@ -18,10 +19,10 @@ const Contacto = ({ contactoHeight }) => {
         const a = validarCampo(asunto, document.querySelector('#asunto'))
         const b = validarCampo(nombre, document.querySelector('#nombre'))
         const c = validarCampo(email, document.querySelector('#email'))
-        const d = validarCampo(mensaje, document.querySelector('#mensaje'))
+        const d = validarCampo(telefono, document.querySelector('#telefono'))
+        const f = validarCampo(mensaje, document.querySelector('#mensaje'))
 
-        if (a && b && c && d) emailjs.send("service_8q90a54", "template_9xc4yyt", { asunto, nombre, email, mensaje }, "DiAaHBMoI1dvusi44");
-        console.log({ asunto, nombre, email, mensaje });
+        if (a && b && c && d && f) emailjs.send("service_8q90a54", "template_9xc4yyt", { asunto, nombre, email, telefono, mensaje }, "DiAaHBMoI1dvusi44");
     }
     const validarCampo = (campo, input) => {
         if (/^\s/.test(campo) || campo === '') {
@@ -50,9 +51,9 @@ const Contacto = ({ contactoHeight }) => {
                             <div className='redes' data-aos="fade-up" style={{
                                 textShadow: "#000 -1px 1px 4px"
                             }}>
-                                <a href="https://www.instagram.com/seguros.ajd/" target="_blank"><img src="./img/contacto/instagram.png" alt="Instagram" /> <span>Instagram</span></a>
-                                <span><img src="./img/contacto/mail.png" alt="Email" /> asdas@ejemplo.com</span>
-                                <span><img src="./img/contacto/phone.png" alt="Teléfono" /> +54 11 1234-5678</span>
+                                <a href="https://www.instagram.com/seguros.ajd/" target="_blank"><img src="./img/contacto/instagram.png" alt="Instagram" /> <span>@SEGUROS.AJD</span></a>
+                                <span><img src="./img/contacto/mail.png" alt="Email" /> seguros.ajd@gmail.com</span>
+                                <span><img src="./img/contacto/phone.png" alt="Teléfono" /> +54 11 3898-5512</span>
                             </div>
                         </div>
                         <div className='form'>
@@ -70,6 +71,10 @@ const Contacto = ({ contactoHeight }) => {
                                         <label htmlFor='email'>* Email</label>
                                         <input type="email" id='email' placeholder='Ingresa tu mail...' onChange={(e) => setEmail(e.target.value)} />
                                     </div>
+                                </div>
+                                <div data-aos="fade-up">
+                                    <label htmlFor='telefono'>* Teléfono</label>
+                                    <input type="number" id='telefono' placeholder='Ingresa tu teléfono...' onChange={(e) => setTelefono(e.target.value)} />
                                 </div>
                                 <div data-aos="fade-up">
                                     <label htmlFor='mensaje'>* Mensaje</label>
