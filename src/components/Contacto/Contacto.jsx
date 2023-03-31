@@ -51,7 +51,7 @@ const Contacto = ({ contactoHeight }) => {
                             <div className='redes' data-aos="fade-up" style={{
                                 textShadow: "#000 -1px 1px 4px"
                             }}>
-                                <a href="https://www.instagram.com/seguros.ajd/" target="_blank"><img src="./img/contacto/instagram.png" alt="Instagram" /> <span>@SEGUROS.AJD</span></a>
+                                <a href="https://www.instagram.com/seguros.ajd/" target="_blank"><img src="./img/contacto/instagram.png" alt="Instagram" /> <span>@seguros.ajd</span></a>
                                 <span><img src="./img/contacto/mail.png" alt="Email" /> seguros.ajd@gmail.com</span>
                                 <span><img src="./img/contacto/phone.png" alt="Teléfono" /> +54 11 3898-5512</span>
                             </div>

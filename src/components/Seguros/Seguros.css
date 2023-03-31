@@ -55,11 +55,11 @@
     width: 9rem;
     /* color: #5275e7; */
     color: #fff;
-    background-color: #333;
+    background: linear-gradient(180deg, #444, #222);
     font-weight: 600;
     /* backdrop-filter: blur(.2rem); */
     border-radius: 50%;
-    border: #fff solid .2rem;
+    border: #fff solid .14rem;
     aspect-ratio: 1 / 1;
     padding: 2rem;
     height: min-content;
@@ -67,9 +67,9 @@
     user-select: none;
 }
 
-.seguro:hover {
+/* .seguro:hover {
     transform: scale(1.2) !important;
-}
+} */
 
 .seguro img {
     width: 50%;

@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    height: 20%;
+    min-width: 10rem;
+    max-width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    width: 12rem;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    background: linear-gradient(180deg, #444, #222);
+    box-shadow: #000 0 0 20px;
+    color: #eee;
+    border-radius: .3rem;
+    padding: .5rem;
+    transition: .3s;
+}
+
+.seguro {
+    backface-visibility: hidden;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.container:hover .seguro {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.container:hover .text {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.test:hover {
+    z-index: 1;
+}

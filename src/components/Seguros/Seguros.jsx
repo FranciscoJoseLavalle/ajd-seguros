@@ -1,7 +1,8 @@
 import './Seguros.css';
+import './SegurosAnimation.css';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 const seguros = [
     { label: "Automotores", thumbnail: "./img/seguros/car.png" },
@@ -32,9 +33,18 @@ const Seguros = ({ segurosHeight }) => {
                     }}>ofrecemos?</span></h2>
                     <div className='seguros'>
                         {seguros.map((seguro, i) => (
-                            <div key={i} className="seguro" data-aos="flip-left">
-                                <img src={seguro.thumbnail} alt={seguro.label} />
-                                <small>{seguro.label}</small>
+                            <div key={i} data-aos="flip-left" className='test'>
+                                <div className="container">
+                                    <div className="seguro">
+                                        <img src={seguro.thumbnail} alt={seguro.label} />
+                                        <small>{seguro.label}</small>
+                                    </div>
+                                    <div className="text">
+                                        <div>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vero aliquam vel magnam autem iste sunt officia.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         ))}
                     </div>

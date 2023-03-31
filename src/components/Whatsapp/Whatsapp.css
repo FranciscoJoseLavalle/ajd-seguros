@@ -3,6 +3,7 @@
     bottom: 1rem;
     right: 1rem;
     width: 6rem;
+    z-index: 5;
 }
 .whatsapp img {
     width: 100%;

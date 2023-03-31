@@ -14,16 +14,6 @@ const Main = ({ isVisible }) => {
     useEffect(() => {
         setSegurosHeight(document.querySelector('.seguros').clientHeight)
         setContactHeight(document.querySelector('.form-container').clientHeight)
-
-        // const observer = new IntersectionObserver(function (entries) {
-        //     if (entries[0].isIntersecting) {
-        //         setIsVisible(true);
-        //     } else {
-        //         setIsVisible(false);
-        //     }
-        // });
-
-        // observer.observe(document.querySelector("#carouselExampleIndicators"));
     }, [])
     window.onresize = () => {
         setSegurosHeight(document.querySelector('.seguros').clientHeight)

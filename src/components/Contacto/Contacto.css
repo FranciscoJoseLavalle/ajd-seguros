@@ -102,7 +102,8 @@
 }
 
 .redes a span {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    cursor: pointer;
 }
 
 .redes span {

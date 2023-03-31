@@ -27,7 +27,7 @@ const Footer = () => {
                     </ul>
                 </nav>
             </div>
-            <p>Desarrollado por <a href="https://franciscolavalle.netlify.app/" target="_blank">Francisco Lavalle</a></p>
+            {/* <p>Desarrollado por <a href="https://franciscolavalle.netlify.app/" target="_blank">Francisco Lavalle</a></p> */}
         </footer>
     )
 }
