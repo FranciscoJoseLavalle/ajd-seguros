@@ -7,7 +7,7 @@ const Footer = () => {
             <div>
                 <div className='footer__info'>
                     <div className='footer__info-container'>
-                        <div className='footer__info-img'></div>
+                        <img src='./img/amir.jpg' className='footer__info-img'></img>
                         <div className='footer__info-text'>
                             <p>Amir Julián Dib</p>
                             <small>Productor Asesor de Seguros</small>
@@ -16,8 +16,15 @@ const Footer = () => {
                         <small>seguros.ajd@gmail.com</small> */}
                         </div>
                     </div>
-                    <img src="./img/compañias/ssn.png" alt="SSN Logo" width={"100%"}/>
+                    <img src="./img/compañias/ssn.png" alt="SSN Logo" width={"100%"} />
                 </div>
+                <nav className='footer__nav'>
+                    <ul className='footer__nav-ul'>
+                        {Links.map(link => (
+                            <li key={link.label}><a href={link.route}>{link.label}</a></li>
+                        ))}
+                    </ul>
+                </nav>
             </div>
             {/* <p>Desarrollado por <a href="https://franciscolavalle.netlify.app/" target="_blank">Francisco Lavalle</a></p> */}
         </footer>
@@ -32,9 +39,4 @@ export default Footer
 //     <img src="./img/logo.jpg" alt="Logo" width={50} height={50} />
 //     {/* <h1>AJD<span>Seguros</span></h1> */}
 // </a>
-// <ul className='footer__nav-ul'>
-//     {Links.map(link => (
-//         <li key={link.label}><a href={link.route}>{link.label}</a></li>
-//     ))}
-// </ul>
 // </nav>
