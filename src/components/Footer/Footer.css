@@ -33,7 +33,7 @@
     justify-content: center;
 }
 .footer__info > img{
-    max-width: 20rem;
+    max-width: 15rem;
 }
 
 .footer__info-container {
@@ -47,6 +47,7 @@
     width: 6rem;
     height: 6rem;
     border-radius: 50%;
+    box-shadow: #111 0 0 10px;
 }
 
 .footer__info-text {

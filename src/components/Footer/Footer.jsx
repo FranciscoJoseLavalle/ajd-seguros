@@ -16,7 +16,7 @@ const Footer = () => {
                         <small>seguros.ajd@gmail.com</small> */}
                         </div>
                     </div>
-                    <img src="./img/compañias/ssn.png" alt="SSN Logo" width={"100%"} />
+                    <img src="./img/ssn.png" alt="SSN Logo" width={"100%"} />
                 </div>
                 <nav className='footer__nav'>
                     <ul className='footer__nav-ul'>
