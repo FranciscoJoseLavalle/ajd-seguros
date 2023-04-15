@@ -14,7 +14,6 @@ const compañias = [
     { thumbnail: './img/compañias/mercantil.png' },
     { thumbnail: './img/compañias/sanpatricio.png' },
     { thumbnail: './img/compañias/smg.png' },
-    { thumbnail: './img/compañias/ssn.png' },
     { thumbnail: './img/compañias/zurich.png' },
 ]
 
