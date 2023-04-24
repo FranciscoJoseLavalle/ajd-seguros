@@ -30,9 +30,10 @@
     flex-direction: column;
     width: 100%;
     justify-content: center;
+    align-items: flex-end;
 }
 .footer__info > img{
-    max-width: 15rem;
+    max-width: 16.5rem;
 }
 
 .footer__info-container {

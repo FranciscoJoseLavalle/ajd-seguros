@@ -7,7 +7,9 @@
 
 #compañias img {
     object-fit: contain;
-    width: 10rem;
+    /* width: min-content; */
+    width: 8rem;
+    height: 8rem;
 }
 
 #compañias img:hover {

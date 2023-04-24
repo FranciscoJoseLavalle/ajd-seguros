@@ -16,7 +16,7 @@ const Nosotros = () => {
             }}>Nosotros</span></h2>
             <div data-aos="fade-up"
                 data-aos-anchor-placement="center-bottom">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>Laudantium ducimus</b> ullam deleniti <b>aspernatur</b>, obcaecati est fuga molestiae ex beatae cupiditate nesciunt <b>consequatur dolorum</b> porro incidunt iure nemo! Commodi odit tempora vitae recusandae consectetur, atque aliquid beatae, <b>exercitationem neque</b> nostrum, tempo.</p>
+                <p>Soy un <b>Productor Asesor de Seguros</b> donde mi misión es ofrecerle un <b>seguro</b> acorde a sus necesidades, para así <b>proteger</b> su <b>patrimonio</b> y/o <b>vida</b>.</p>
             </div>
         </section >
     )

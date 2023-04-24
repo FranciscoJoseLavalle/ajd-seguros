@@ -47,7 +47,7 @@ const Contacto = ({ contactoHeight }) => {
                             }}>Contacto</h2>
                             <p data-aos="fade-up" style={{
                                 textShadow: "#000 -1px 1px 4px"
-                            }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ullam ab facilis!</p>
+                            }}>Complete el formulario para que me pueda contactar con usted y así brindarle un asesoramiento acorde a sus necesidades.</p>
                             <div className='redes' data-aos="fade-up" style={{
                                 textShadow: "#000 -1px 1px 4px"
                             }}>
