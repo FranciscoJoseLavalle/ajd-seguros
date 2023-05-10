@@ -3,6 +3,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css';
 import { useEffect, useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { app } from '../../fb';
 
 const Contacto = ({ contactoHeight }) => {
     const [asunto, setAsunto] = useState('');
@@ -10,6 +11,7 @@ const Contacto = ({ contactoHeight }) => {
     const [email, setEmail] = useState('');
     const [telefono, setTelefono] = useState('');
     const [mensaje, setMensaje] = useState('');
+    const [archivo, setArchivo] = useState('');
 
     useEffect(() => {
         AOS.init();
@@ -22,7 +24,7 @@ const Contacto = ({ contactoHeight }) => {
         const d = validarCampo(telefono, document.querySelector('#telefono'))
         const f = validarCampo(mensaje, document.querySelector('#mensaje'))
 
-        if (a && b && c && d && f) emailjs.send("service_8q90a54", "template_9xc4yyt", { asunto, nombre, email, telefono, mensaje }, "DiAaHBMoI1dvusi44");
+        if (a && b && c && d && f) emailjs.send("service_8q90a54", "template_9xc4yyt", { asunto, nombre, email, telefono, mensaje, enlace: archivo ? `Enlace al archivo adjunto: ${archivo}` : "No se envió archivo adjunto." }, "DiAaHBMoI1dvusi44");
     }
     const validarCampo = (campo, input) => {
         if (/^\s/.test(campo) || campo === '') {
@@ -32,6 +34,14 @@ const Contacto = ({ contactoHeight }) => {
             input.classList.remove('inputWrong');
             return true
         }
+    }
+    const sendFile = async (e) => {
+        const archivo = e.target.files[0];
+        const storageRef = app.storage().ref();
+        const archivoPath = storageRef.child(archivo.name + "-" + Date.now());
+        await archivoPath.put(archivo);
+        const enlace = await archivoPath.getDownloadURL();
+        setArchivo(enlace);
     }
     return (
         <section id='contacto' style={{
@@ -82,7 +92,7 @@ const Contacto = ({ contactoHeight }) => {
                                 </div>
                                 <div data-aos="fade-up">
                                     <label htmlFor='archivo'>Suba un archivo</label>
-                                    <input type="file" id='archivo' placeholder='Ingresa el mensaje...' />
+                                    <input type="file" id='archivo' onChange={sendFile} />
                                 </div>
                                 <button>Enviar</button>
                             </form>
