@@ -14,7 +14,6 @@ const Carousel = () => {
                     <img src="./img/auto.webp" className="d-block w-50" alt="..." />
                     <div>
                         <h3>¡Manejá tranquilo!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
                         <BtnContactanos />
                     </div>
                 </div>
@@ -22,15 +21,13 @@ const Carousel = () => {
                     <img src="./img/confianza.webp" className="d-block w-50" alt="..." />
                     <div>
                         <h3>Confianza</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
                         <BtnContactanos />
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src="./img/trabajo.webp" className="d-block w-50" alt="..." />
                     <div>
-                        <h3>ART Riesgos del Trabajo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lauda.</p>
+                        <h3>ART, Accidentes de Riesgos del Trabajo</h3>
                         <BtnContactanos />
                     </div>
                 </div>
