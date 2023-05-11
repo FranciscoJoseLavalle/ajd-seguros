@@ -12,6 +12,7 @@ const Contacto = ({ contactoHeight }) => {
     const [telefono, setTelefono] = useState('');
     const [mensaje, setMensaje] = useState('');
     const [archivo, setArchivo] = useState('');
+    const [isArchivo, setIsArchivo] = useState(false);
 
     useEffect(() => {
         AOS.init();
@@ -23,8 +24,9 @@ const Contacto = ({ contactoHeight }) => {
         const c = validarCampo(email, document.querySelector('#email'))
         const d = validarCampo(telefono, document.querySelector('#telefono'))
         const f = validarCampo(mensaje, document.querySelector('#mensaje'))
+        const g = isArchivo ? validarCampo(archivo, document.querySelector('#archivo')) : true
 
-        if (a && b && c && d && f) emailjs.send("service_8q90a54", "template_9xc4yyt", { asunto, nombre, email, telefono, mensaje, enlace: archivo ? `Enlace al archivo adjunto: ${archivo}` : "No se envió archivo adjunto." }, "DiAaHBMoI1dvusi44");
+        if (a && b && c && d && f && g) emailjs.send("service_8q90a54", "template_9xc4yyt", { asunto, nombre, email, telefono, mensaje, enlace: archivo ? `Enlace al archivo adjunto: ${archivo}` : "No se envió archivo adjunto." }, "DiAaHBMoI1dvusi44");
     }
     const validarCampo = (campo, input) => {
         if (/^\s/.test(campo) || campo === '') {
@@ -36,6 +38,7 @@ const Contacto = ({ contactoHeight }) => {
         }
     }
     const sendFile = async (e) => {
+        setIsArchivo(true);
         const archivo = e.target.files[0];
         const storageRef = app.storage().ref();
         const archivoPath = storageRef.child(archivo.name + "-" + Date.now());
@@ -93,6 +96,11 @@ const Contacto = ({ contactoHeight }) => {
                                 <div data-aos="fade-up">
                                     <label htmlFor='archivo'>Suba un archivo</label>
                                     <input type="file" id='archivo' onChange={sendFile} />
+                                    {isArchivo &&
+                                        <p style={{
+                                            fontSize: '1rem'
+                                        }}>{archivo ? "Subido correctamente" : "Subiendo..."}</p>
+                                    }
                                 </div>
                                 <button>Enviar</button>
                             </form>
