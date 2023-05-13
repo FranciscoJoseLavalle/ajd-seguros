@@ -7,7 +7,7 @@ const Footer = () => {
             <div>
                 <div className='footer__info'>
                     <div className='footer__info-container'>
-                        <img src='./img/amir.jpg' className='footer__info-img'></img>
+                        <img src='./img/amir.webp' className='footer__info-img' alt='Foto Amir'/>
                         <div className='footer__info-text'>
                             <p>Amir Julián Dib</p>
                             <small>Productor Asesor de Seguros</small>
@@ -16,7 +16,7 @@ const Footer = () => {
                         <small>seguros.ajd@gmail.com</small> */}
                         </div>
                     </div>
-                    <img src="./img/ssn.png" alt="SSN Logo" width={"100%"} />
+                    <img src="./img/ssn.webp" alt="SSN Logo" width={"100%"} />
                 </div>
                 <nav className='footer__nav'>
                     <ul className='footer__nav-ul'>
@@ -26,7 +26,7 @@ const Footer = () => {
                     </ul>
                 </nav>
             </div>
-            {/* <p>Desarrollado por <a href="https://franciscolavalle.netlify.app/" target="_blank">Francisco Lavalle</a></p> */}
+            <small>Desarrollado por <a href="https://franciscolavalle.netlify.app/" target="_blank">Francisco Lavalle</a></small>
         </footer>
     )
 }

@@ -1,20 +1,20 @@
 import './Compañias.css';
 
 const compañias = [
-    { thumbnail: './img/compañias/allianz.png' },
-    { thumbnail: './img/compañias/cristobal.png' },
-    { thumbnail: './img/compañias/experta.png' },
-    { thumbnail: './img/compañias/patronal.png' },
-    { thumbnail: './img/compañias/provincia.png' },
+    { thumbnail: './img/compañias/allianz.webp' },
+    { thumbnail: './img/compañias/cristobal.webp' },
+    { thumbnail: './img/compañias/experta.webp' },
+    { thumbnail: './img/compañias/patronal.webp' },
+    { thumbnail: './img/compañias/provincia.webp' },
     { thumbnail: './img/compañias/rivadavia.webp' },
-    { thumbnail: './img/compañias/sancor.png' },
+    { thumbnail: './img/compañias/sancor.webp' },
     { thumbnail: './img/compañias/rus.webp' },
-    { thumbnail: './img/compañias/berkley.png' },
-    { thumbnail: './img/compañias/hdi.png' },
-    { thumbnail: './img/compañias/mercantil.png' },
-    { thumbnail: './img/compañias/sanpatricio.png' },
-    { thumbnail: './img/compañias/smg.png' },
-    { thumbnail: './img/compañias/zurich.png' },
+    { thumbnail: './img/compañias/berkley.webp' },
+    { thumbnail: './img/compañias/hdi.webp' },
+    { thumbnail: './img/compañias/mercantil.webp' },
+    { thumbnail: './img/compañias/sanpatricio.webp' },
+    { thumbnail: './img/compañias/smg.webp' },
+    { thumbnail: './img/compañias/zurich.webp' },
 ]
 
 const Compañias = () => {
